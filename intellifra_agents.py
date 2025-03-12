@@ -34,7 +34,7 @@ async def main():
     # 1. Create the agent
     agent = ChatCompletionAgent(
         service=AzureChatCompletion(
-            deployment_name=os.getenv("GPT4O_MODEL_DEPLOYMENT_NAME") ,  
+            deployment_name=os.getenv("MODEL_DEPLOYMENT_NAME") ,  
             api_key=os.getenv("OPENAI_API_KEY") ,
             endpoint=os.getenv("OPENAI_API_BASE")  , # Used to point to your service
             service_id="intellifra", # Optional; for targeting specific services within Semantic Kernel
